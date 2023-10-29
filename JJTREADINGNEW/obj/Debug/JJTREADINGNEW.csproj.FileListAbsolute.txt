@@ -68,3 +68,7 @@ C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.csproj
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.csproj.CopyComplete
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.exe
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.pdb
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Log.resources
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Prdeictions.resources
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.SupplyContact.resources
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.CustomerContact.resources

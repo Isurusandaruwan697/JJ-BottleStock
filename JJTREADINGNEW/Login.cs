@@ -20,7 +20,7 @@ namespace JJTREADINGNEW
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
             string Username = guna2TextBox2.Text;
             string Password = guna2TextBox1.Text;
 
@@ -30,7 +30,7 @@ namespace JJTREADINGNEW
                 {
                     con.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT UserID, Role, FullName,UserName FROM Users WHERE UserName = @Username AND Password = @Password", con))
+                    using (SqlCommand cmd = new SqlCommand("SELECT UserID, Role, FirstName,UserName FROM Users WHERE UserName = @Username AND Password = @Password", con))
                     {
                         cmd.Parameters.AddWithValue("@Username", Username);
                         cmd.Parameters.AddWithValue("@Password", Password);
@@ -43,7 +43,7 @@ namespace JJTREADINGNEW
                             int UserID = reader.GetInt32(0);
                             string role = reader.GetString(1);
                             string UserName = reader.GetString(1);
-                            string FullName = reader.GetString(2); // Use 2 instead of 1 for FullName
+                            string FirstName = reader.GetString(2); // Use 2 instead of 1 for FullName
                             reader.Close();
 
                             // Call the LogLogin stored procedure to store the login time
@@ -57,7 +57,7 @@ namespace JJTREADINGNEW
 
                             if (role == "User")
                             {
-                                Dashboardscreen obj = new Dashboardscreen(UserID, FullName,UserName);
+                                Dashboardscreen obj = new Dashboardscreen(UserID, FirstName, UserName);
                                 this.Hide();
                                 obj.Show();
                             }

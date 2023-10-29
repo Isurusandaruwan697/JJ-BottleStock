@@ -14,23 +14,23 @@ namespace JJTREADINGNEW
 {
     public partial class Dashboardscreen : Form
     {
-        string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
         private int UserID;
-        private string FullName;
+        private string FirstName;
         private string UserName;
-        public Dashboardscreen(int UserID,String FullName,String UserName)
+        public Dashboardscreen(int UserID,String FirstName, String UserName)
         {
             InitializeComponent();
       
             this.UserID = UserID;
-            this.FullName = FullName;
+            this.FirstName = FirstName;
             this.UserName = UserName;
         }
 
-        public Dashboardscreen(int userID, string fullName)
+        public Dashboardscreen(int userID, string FirstName)
         {
             UserID = userID;
-            FullName = fullName;
+            FirstName = FirstName;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -45,9 +45,9 @@ namespace JJTREADINGNEW
 
         private void Dashboardscreen_Load(object sender, EventArgs e)
         {
-            label1.Text = FullName;
+            label1.Text = FirstName;
             label2.Text = "Welcome Back "+ UserName +"!";
-            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -85,17 +85,67 @@ namespace JJTREADINGNEW
                     }
                 }
 
+                UpdateTotalQuantityLabel();
+                UpdateCustomerAndSupplierCounts();
 
                 DateTime currentDateTime = DateTime.Now;
 
                 // Set the label's Text property to display the current date and time
                 label4.Text = currentDateTime.ToString();
+
+                leaba();
             }
 
           
 
 
         }
+
+        private void leaba()
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Define a SQL query to count the number of categories
+                string countQuery = "SELECT COUNT(*) FROM Category";
+
+                using (SqlCommand countCmd = new SqlCommand(countQuery, connection))
+                {
+                    int categoryCount = (int)countCmd.ExecuteScalar(); // ExecuteScalar to get the count
+
+                    label5.Text ="Total :"+ categoryCount;
+                }
+            }
+
+        }
+
+        private void UpdateTotalQuantityLabel()
+        {
+            // Assuming you have a Label control named 'labelTotalQuantity' on your form
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT SUM(Quantity) AS TotalQuantity FROM Stock";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        int totalQuantity = Convert.ToInt32(result);
+                        label6.Text = "Total Stock:\n " + totalQuantity;
+                    }
+                    else
+                    {
+                        label6.Text = "No data found in the Stock table.";
+                    }
+                }
+            }
+        }
+
 
 
 
@@ -120,14 +170,14 @@ namespace JJTREADINGNEW
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stock obj = new stock(FullName,UserID);
+            stock obj = new stock(FirstName, UserID);
             obj.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -158,22 +208,22 @@ namespace JJTREADINGNEW
 
         private void button4_Click(object sender, EventArgs e)
         {
-            stock obj=new stock(FullName, UserID);  
-            obj.Show(); 
-            this.Hide();
+           
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
 
-            Category obj = new Category(UserID, FullName);
+            Category obj = new Category(UserID, FirstName);
             obj.Show();
             this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            Category obj = new Category(UserID, FirstName);
+            obj.Show();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -265,5 +315,80 @@ namespace JJTREADINGNEW
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Customera obj = new Customera(UserID, FirstName);
+            obj.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Supplier obj = new Supplier(UserID,FirstName);
+             obj.Show();
+            this.Hide();
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Method to get the total number of customers
+        private int GetCustomerCount()
+        {
+            int customerCount = 0;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM Customer";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    customerCount = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+            return customerCount;
+        }
+
+        // Method to get the total number of suppliers
+        private int GetSupplierCount()
+        {
+            int supplierCount = 0;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM Supplier";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    supplierCount = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+            return supplierCount;
+        }
+
+
+        // Assuming you have Label controls named labelCustomerCount and labelSupplierCount
+        private void UpdateCustomerAndSupplierCounts()
+        {
+            int customerCount = GetCustomerCount();
+            int supplierCount = GetSupplierCount();
+
+            label7.Text = "Total : " + customerCount;
+            label11.Text = "Total : " + supplierCount;
+        }
+
+       
+
     }
 }

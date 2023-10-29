@@ -17,15 +17,18 @@ namespace JJTREADINGNEW
 {
     public partial class stock : Form
     {
-        string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
         private int UserID;
-        private string FullName;
-        public stock(String FullName, int UserID)
+        private string FirstName;
+        private string currentSortColumn;
+        private System.Windows.Forms.SortOrder currentSortOrder;
+
+        public stock(String FirstName, int UserID)
         {
             InitializeComponent();
 
             this.UserID = UserID;
-            this.FullName = FullName;
+            this.FirstName = FirstName;
            
         }
        
@@ -33,7 +36,7 @@ namespace JJTREADINGNEW
 
             private void stock_Load(object sender, EventArgs e)
         {
-            label1.Text = FullName;
+            label1.Text = FirstName;
             LoadStockData();
 
             
@@ -101,7 +104,7 @@ namespace JJTREADINGNEW
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           ;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -260,8 +263,11 @@ namespace JJTREADINGNEW
 
 
                 guna2TextBox1.Text = selectedRow.Cells[2].Value.ToString();
-                guna2TextBox3.Text = selectedRow.Cells[4].Value.ToString();
-                guna2TextBox5.Text = selectedRow.Cells[3].Value.ToString();
+                guna2TextBox3.Text = selectedRow.Cells["StockLogQuantity"].Value.ToString();
+                guna2TextBox5.Text = selectedRow.Cells["SupplierID"].Value.ToString();
+
+
+                
             }
         }
 
@@ -334,7 +340,7 @@ namespace JJTREADINGNEW
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -397,7 +403,74 @@ namespace JJTREADINGNEW
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-      
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Customera obj = new Customera(UserID, FirstName);
+            obj.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Category obj = new Category(UserID, FirstName);
+            obj.Show();
+            this.Hide();    
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Supplier obj = new Supplier(UserID, FirstName);
+            obj.Show();
+            this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+            string columnName = string.Empty;
+
+            // Determine the sorting criteria based on the selected item in comboBox1
+            if (comboBox1.SelectedItem != null)
+            {
+                string selectedSortCriteria = comboBox1.SelectedItem.ToString();
+
+                if (selectedSortCriteria == "CategoryName")
+                {
+                    columnName = "CategoryName";
+                }
+                else if (selectedSortCriteria == "SupplierName")
+                {
+                    columnName = "SupplierName";
+                }
+            }
+
+            // Apply the sorting to the DataGridView
+            if (!string.IsNullOrEmpty(columnName))
+            {
+                // Replace the comments with your actual code to sort the DataGridView
+                // Example: dataGridView1.Sort(dataGridView1.Columns[columnName], ListSortDirection.Ascending);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
