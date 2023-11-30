@@ -16,6 +16,13 @@ JJ Trading, an established market player, confronts significant challenges in it
 ## Solution
 We propose developing an all-inclusive standalone application for JJ Trading to address its stock and order management challenges. Tailored to enhance operational efficiency and streamline processes, the solution is designed considering the company's limited resources, small-scale operations, and the preference for a single-computer setup. This application aims to provide a cost-effective and user-friendly solution for JJ Trading's specific needs as they navigate the early stages of the business industry.
 
+>We used advanced database concepts like procedures, functions, triggers, and views for the database implementation and other backend work.
+Mainly;
+* Functions for encapsulating reusable computations
+* Procedures for executing complex tasks
+* Triggers for responding to specific events
+* Views for offering virtual representations to streamline data querying and management
+
 1. Used software and frameworks:
 * Visual Studio
 * .Net Framework 4.8 
