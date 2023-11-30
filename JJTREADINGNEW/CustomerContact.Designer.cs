@@ -53,6 +53,7 @@
             this.label3.Size = new System.Drawing.Size(261, 20);
             this.label3.TabIndex = 111;
             this.label3.Text = "Customer Contact Information";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2Button5
             // 
@@ -69,6 +70,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(157, 44);
             this.guna2Button5.TabIndex = 110;
             this.guna2Button5.Text = "Serach";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2TextBox5
             // 
@@ -98,6 +100,7 @@
             this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
             this.guna2TextBox5.Size = new System.Drawing.Size(211, 44);
             this.guna2TextBox5.TabIndex = 109;
+            this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
             // 
             // dataGridView1
             // 
@@ -120,6 +123,7 @@
             this.label2.Size = new System.Drawing.Size(58, 18);
             this.label2.TabIndex = 119;
             this.label2.Text = "Mobile";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -131,6 +135,7 @@
             this.label1.Size = new System.Drawing.Size(63, 18);
             this.label1.TabIndex = 118;
             this.label1.Text = "Cus_ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button4
             // 
@@ -147,6 +152,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(100, 40);
             this.guna2Button4.TabIndex = 117;
             this.guna2Button4.Text = "Clear";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 
@@ -163,6 +169,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(100, 40);
             this.guna2Button3.TabIndex = 116;
             this.guna2Button3.Text = "Edit";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -179,6 +186,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(100, 40);
             this.guna2Button2.TabIndex = 115;
             this.guna2Button2.Text = "Delete";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -224,6 +232,7 @@
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(232, 44);
             this.guna2TextBox1.TabIndex = 113;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2TextBox4
             // 
@@ -252,6 +261,7 @@
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Size = new System.Drawing.Size(232, 44);
             this.guna2TextBox4.TabIndex = 112;
+            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // CustomerContact
             // 

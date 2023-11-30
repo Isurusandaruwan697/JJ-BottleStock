@@ -316,12 +316,14 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click_3);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click_2);
             // 
             // label6
             // 
@@ -336,6 +338,7 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
             // label11
             // 

@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="CustomerContact.Designer.cs">
       <DependentUpon>CustomerContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListUser.Designer.cs">
+      <DependentUpon>ListUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Log.cs">
       <SubType>Form</SubType>
@@ -106,12 +118,6 @@
     <Compile Include="Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
-    <Compile Include="Orderstock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Orderstock.Designer.cs">
-      <DependentUpon>Orderstock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Prdeictions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     <Compile Include="SupplyContact.Designer.cs">
       <DependentUpon>SupplyContact.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerContact.resx">
       <DependentUpon>CustomerContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListUser.resx">
+      <DependentUpon>ListUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
@@ -170,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Orderstock.resx">
-      <DependentUpon>Orderstock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prdeictions.resx">
       <DependentUpon>Prdeictions.cs</DependentUpon>

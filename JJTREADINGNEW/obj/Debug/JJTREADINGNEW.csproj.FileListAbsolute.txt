@@ -58,7 +58,6 @@ C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Form1.
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Dashboardscreen.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Loginhistorycs.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Order.resources
-C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Orderstock.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Properties.Resources.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.stock.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.SuperAdminDashbord.resources
@@ -72,3 +71,5 @@ C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Log.re
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.Prdeictions.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.SupplyContact.resources
 C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.CustomerContact.resources
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.AddUser.resources
+C:\Users\User\Desktop\JJ-BottleSage\JJTREADINGNEW\obj\Debug\JJTREADINGNEW.ListUser.resources

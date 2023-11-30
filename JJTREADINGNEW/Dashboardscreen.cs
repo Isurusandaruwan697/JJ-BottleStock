@@ -388,7 +388,19 @@ namespace JJTREADINGNEW
             label11.Text = "Total : " + supplierCount;
         }
 
-       
+        private void label4_Click_3(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

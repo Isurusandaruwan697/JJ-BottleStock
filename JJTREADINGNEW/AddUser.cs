@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace JJTREADINGNEW
 {
-    public partial class Orderstock : Form
+    public partial class AddUser : Form
     {
-        public Orderstock()
+        public AddUser()
         {
             InitializeComponent();
+        }
+
+        private void AddUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

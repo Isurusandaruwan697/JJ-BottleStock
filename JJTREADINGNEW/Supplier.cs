@@ -21,7 +21,7 @@ namespace JJTREADINGNEW
         private string FirstName;
 
        
-            public Supplier(int UserID, String FullName)
+            public Supplier(int UserID, String FirstName)
         {
             InitializeComponent();
 

@@ -63,7 +63,7 @@ namespace JJTREADINGNEW
                             }
                             else if (role == "Admin")
                             {
-                                SuperAdminDashbord superAdminObj = new SuperAdminDashbord();
+                                SuperAdminDashbord superAdminObj = new SuperAdminDashbord(UserID, FirstName, UserName);
                                 this.Hide();
                                 superAdminObj.Show();
                             }
@@ -86,6 +86,11 @@ namespace JJTREADINGNEW
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
