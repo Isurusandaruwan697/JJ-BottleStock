@@ -71,12 +71,10 @@ We propose developing an all-inclusive standalone application for JJ Trading to 
 <img src="img/screenshot_20231130_214131.png" height="450" width="900">
 
 >User Registration
-<img src="img/screenshot_20231130_214152" height="450" width="900">
+<img src="img/screenshot_20231130_214152.png" height="450" width="900">
 
-
-
-
-
+## Conclusion
+In summary, the implementation of an advanced stock and order management system at JJ Trading represents a significant leap forward in operational efficiency and service quality. By addressing manual processes, inventory limitations, and data inaccuracies, the automated system promises to streamline stock management and improve order processing accuracy. The integration of comprehensive stock logging enables historical insights for trend analysis, while robust data security measures instill trust among stakeholders. With the JJBotttleStage solution, JJ Trading is positioned for growth and a competitive edge in the water bottle distribution market of Homagama City.
 
 
 
