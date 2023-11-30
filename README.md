@@ -45,6 +45,34 @@ We propose developing an all-inclusive standalone application for JJ Trading to 
 >Customer Mobile
 <img src="img/screenshot_20231130_213445.png" height="450" width="900">
 
+>Category
+<img src="img/screenshot_20231130_213523.png" height="450" width="900">
+
+>Supplier
+<img src="img/screenshot_20231130_213645.png" height="450" width="900">
+
+>Supplier Contact
+<img src="img/screenshot_20231130_213712.png" height="450" width="900">
+
+2.2. Admin Interfaces 
+>Admin Dashboard
+<img src="img/screenshot_20231130_214048.png" height="450" width="900">
+
+>Log Records
+<img src="img/screenshot_20231130_214111.png" height="450" width="900">
+
+>User Management
+<img src="img/screenshot_20231130_214131.png" height="450" width="900">
+
+
+
+
+
+
+
+
+
+
 
 
 
