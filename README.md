@@ -6,3 +6,6 @@ JJ Trading, a small-scale water bottle distribution company in Homagama City, pr
 
 ## Problem Definition
 JJ Trading, an established market player, confronts significant challenges in its stock and order management. The manual stock counting and order processing methods contribute to time-consuming processes and errors. The lack of automation results in delays and potential mismatches in customer orders. The company struggles to obtain accurate predictions and analytical data, leading to stock-related issues like stockouts and overstocking. Limited storage space further complicates matters, causing disorganization and increased risks of stock loss. Addressing these challenges is imperative for JJ Trading to streamline operations, reduce errors, and improve the overall efficiency of its stock and order management processes.
+
+## Solution
+We propose developing an all-inclusive Standalone Application for JJ Trading to address their stock and order management challenges. Tailored to enhance operational efficiency and streamline processes, the solution is designed considering the company's limited resources, small-scale operations, and the preference for a single-computer setup. This application aims to provide a cost-effective and user-friendly solution for JJ Trading's specific needs as they navigate the early stages of the business industry.
