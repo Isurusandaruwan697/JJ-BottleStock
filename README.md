@@ -26,4 +26,11 @@ We propose developing an all-inclusive standalone application for JJ Trading to 
 2. Interfaces
 
 >Loading
-<img src="img/screenshot_20231130_212613.jpg" height="400" width="900">
+<img src="img/screenshot_20231130_212613.png" height="400" width="900">
+
+>Login
+<img src="img/screenshot_20231130_212812.png" height="400" width="900">
+* “Role” decides whether the user should be redirected to the User dashboard or Super Admin dashboard. (“User” can be either “Super Admin” or a “Staff-User”)
+
+
+
