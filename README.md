@@ -32,5 +32,28 @@ We propose developing an all-inclusive standalone application for JJ Trading to 
 <img src="img/screenshot_20231130_212812.png" height="450" width="900">
 ### “Role” decides whether the user should be redirected to the User dashboard or Super Admin dashboard. (“User” can be either “Super Admin” or a “Staff-User”)
 
+2.1. User Interfaces
+>User Dashboard
+<img src="img/screenshot_20231130_212842.png" height="450" width="900">
+
+>Stock
+<img src="img/screenshot_20231130_212904.png" height="450" width="900">
+
+>Customer
+<img src="img/screenshot_20231130_213108.png" height="450" width="900">
+
+>Customer Mobile
+<img src="img/screenshot_20231130_213445.png" height="450" width="900">
+
+
+
+
+
+
+
+
+
+
+
 
 
