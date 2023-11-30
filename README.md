@@ -26,7 +26,7 @@ We propose developing an all-inclusive standalone application for JJ Trading to 
 2. Interfaces
 
 >Loading
-<img src="img/screenshot_20231130_212613.png" height="250" width="700">
+<img src="img/screenshot_20231130_212613.png" height="350" width="600">
 
 >Login
 <img src="img/screenshot_20231130_212812.png" height="350" width="600">
