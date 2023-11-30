@@ -1,6 +1,12 @@
 # JJ-BottleStock
 Welcome to the Water Bottle Stock Management System repository for JJ Tradings Company. This comprehensive system is designed to help JJ Tradings efficiently manage their inventory of water bottles, streamline operations, and ensure seamless customer service.
 
+# <img src="img/WhatsApp Image 2023-11-30 at 22.31.27_ee2779d7.jpg" height="150" width="1200" > 
+
+<a href="#"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=isurusandaruwan697&label=Profile%20views&color=0e75b6&style=flat" width="125"/></a>
+[![Welcome](https://img.shields.io/badge/NSBM%20Green%20University-Welcome-brightgreen)](#) 
+[![Welcome](https://img.shields.io/badge/Enterprise%20System-Final%20Project-orange)](#)
+
 ## Background of organization 
 JJ Trading, a small-scale water bottle distribution company in Homagama City, prioritizes meeting customer needs with discounted prices for various occasions. Currently, the company relies on manual processes for operations, lacking dedicated software for stock management. Despite this, JJ Trading is committed to providing efficient water bottle distribution services, aiming to build a reputation for quality service and customer satisfaction. To enhance operational efficiency and embrace technological advancements, the company plans to introduce an advanced database management system for stock and order management. This strategic move is anticipated to elevate service quality, boost customer satisfaction, and foster business growth in the competitive water bottle distribution market in Homagama City.
 
