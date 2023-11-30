@@ -244,7 +244,7 @@
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(137, 44);
             this.guna2Button5.TabIndex = 100;
-            this.guna2Button5.Text = "Serach";
+            this.guna2Button5.Text = "Search";
             // 
             // label3
             // 

@@ -155,7 +155,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(250, 46);
             this.button11.TabIndex = 2;
-            this.button11.Text = "Dashbord";
+            this.button11.Text = "Dashboard";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // label4

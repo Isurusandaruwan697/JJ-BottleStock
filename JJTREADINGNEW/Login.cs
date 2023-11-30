@@ -92,5 +92,10 @@ namespace JJTREADINGNEW
         {
             this.Close();
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

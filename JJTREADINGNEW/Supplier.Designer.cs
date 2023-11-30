@@ -361,9 +361,10 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(304, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 20);
+            this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 96;
-            this.label2.Text = "Supplyer Name";
+            this.label2.Text = "Supplier Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -385,9 +386,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(296, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 20);
+            this.label4.Size = new System.Drawing.Size(131, 20);
             this.label4.TabIndex = 98;
-            this.label4.Text = "Supplyer Email";
+            this.label4.Text = "Supplier Email";
             // 
             // label5
             // 

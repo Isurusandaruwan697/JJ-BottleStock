@@ -62,7 +62,7 @@
             this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.LightBlue;
             this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.DeepSkyBlue;
             this.guna2ProgressBar1.ShadowDecoration.Parent = this.guna2ProgressBar1;
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(400, 50);
+            this.guna2ProgressBar1.Size = new System.Drawing.Size(420, 41);
             this.guna2ProgressBar1.TabIndex = 3;
             this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ProgressBar1.ValueChanged += new System.EventHandler(this.guna2ProgressBar1_ValueChanged);

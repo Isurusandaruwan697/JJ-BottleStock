@@ -456,11 +456,11 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(280, 104);
+            this.label4.Location = new System.Drawing.Point(263, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 20);
             this.label4.TabIndex = 97;
-            this.label4.Text = "Catagory Name";
+            this.label4.Text = "Category Name";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -469,7 +469,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(280, 179);
+            this.label5.Location = new System.Drawing.Point(263, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 20);
             this.label5.TabIndex = 98;
@@ -481,7 +481,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(280, 259);
+            this.label6.Location = new System.Drawing.Point(263, 257);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 99;
