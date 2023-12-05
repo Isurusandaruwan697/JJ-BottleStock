@@ -325,7 +325,9 @@ namespace JJTREADINGNEW
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Order obj=new Order(UserID, FirstName);
+            obj.Show();
+                this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)

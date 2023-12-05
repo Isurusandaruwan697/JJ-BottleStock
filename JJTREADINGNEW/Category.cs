@@ -21,7 +21,7 @@ namespace JJTREADINGNEW
         string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
         private int UserID;
         private string FirstName;
-        public Category(int UserID, String FullName)
+        public Category(int UserID, String FirstName)
         {
             InitializeComponent();
 

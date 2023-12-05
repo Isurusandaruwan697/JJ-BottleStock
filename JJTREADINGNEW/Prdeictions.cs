@@ -14,7 +14,7 @@ namespace JJTREADINGNEW
 {
     public partial class Prdeictions : Form
     {
-       // string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-386L026\\SQLEXPRESS;Initial Catalog=JJBottleStage1;Integrated Security=True";
         private int UserID;
         private string FirstName;
        
@@ -48,10 +48,57 @@ namespace JJTREADINGNEW
             // Set the label's Text property to display the current date and time
             label4.Text = currentDateTime.ToString();
             LoadChartData();
-          
+            LoadStockData();
 
+
+            }
+
+
+        private void LoadStockData()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Replace the query with your logic to get stock data
+                    string query = "SELECT c.CategoryName, s.Quantity, s.Quantity * 100.0 / SUM(s.Quantity) OVER () AS StockPercentage " +
+                                   "FROM Category c " +
+                                   "JOIN Stock s ON c.CategoryID = s.CategoryID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Clear existing series and points
+                            chart2.Series.Clear();
+
+                            // Add a series to the chart
+                            Series series = chart2.Series.Add("StockPercentage");
+                            series.ChartType = SeriesChartType.Pie;
+
+                            // Add data points to the series
+                            foreach (DataRow row in dataTable.Rows)
+                            {
+                                string categoryName = row["CategoryName"].ToString();
+                                double stockPercentage = Convert.ToDouble(row["StockPercentage"]);
+
+                                // Add data points for each category
+                                series.Points.AddXY(categoryName, stockPercentage);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
         }
-
 
 
         private void LoadChartData()
@@ -146,6 +193,16 @@ namespace JJTREADINGNEW
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart3_Click(object sender, EventArgs e)
         {
 
         }

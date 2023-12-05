@@ -109,7 +109,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 137);
+            this.label2.Location = new System.Drawing.Point(73, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 27);
             this.label2.TabIndex = 7;

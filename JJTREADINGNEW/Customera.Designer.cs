@@ -361,6 +361,7 @@
             this.label2.Size = new System.Drawing.Size(103, 18);
             this.label2.TabIndex = 119;
             this.label2.Text = "Customer ID";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -405,6 +406,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 123;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Customera
             // 
